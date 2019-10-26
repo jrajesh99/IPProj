@@ -15,9 +15,42 @@ h1,h2,h3,h4,h5,h6{
     margin: 5px ;
 }
 
-a{
+a{ /*Styling the links */
     text-decoration: none;
     color: inherit;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.btn { /*Styling the buttons*/
+    padding: .5rem 1rem;
+    background: #006669;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.btn:hover{
+    color: white !important;
+    background: #005255;
+
+}
+
+.text-input {
+    padding: 0.7rem 1rem;
+    display: block;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    border-radius: 5px;
+    color: #444;
+    line-height: 1.5rem;
+    font-size: 1.2em;
+    font-family: 'Lora' , 'serif';
 }
 
 header{
@@ -166,6 +199,100 @@ header .menu-toggle{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+
+/*STYLING FOR CONTENT*/
+
+.content {
+    width: 90%;
+    margin: 30px auto 30px;
+}
+
+.content .main-content {
+    width: 70%;
+    float: left;
+}
+
+.content .main-content .recent-post-title {
+    margin: 20px;
+}
+
+.content .main-content .post {
+    width: 95%;
+    height: 270px;
+    margin: 20px auto; 
+    border-radius: 5px;
+    background: white;
+    position: relative;
+}
+
+.content .main-content .post .read-more {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid #006669;
+    background: transparent;
+    border-radius: 0px;
+    color: #006669 !important;
+}
+
+.content .main-content .post .read-more:hover {
+    background: #006669;
+    color: white !important;
+    transition: 0.3s;
+}
+
+.content .main-content .post .post-image {
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+.content .main-content .post .post-preview {
+    width: 60%;
+    padding: 10px;
+    float: right;
+}
+
+.content .sidebar {
+    width: 30%;
+    float: left;
+    height: 300px;
+}
+
+.content .sidebar .section {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.content .sidebar .section .section-title {
+    margin: 10px 0px 10px 0px;
+}
+
+.content .sidebar .section.search {
+    margin-top: 80px; /*Make sure to change this to level the search bar with the first post*/
+}
+
+.content .sidebar .section.topics ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+.content .sidebar .section.topics ul li a {
+    display: block;
+    padding: 15px 0px 15px 0px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: all 0.3s;
+}
+
+.content .sidebar .section.topics ul li a:hover {
+    padding-left: 10px;
+    transition: all 0.3s;
+}
+
 
 /*MEDIA QUERIES*/
 
