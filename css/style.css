@@ -598,7 +598,7 @@ text-decoration: underline;
     }
 
     .content .main-content.single {
-        padding 10px 20px
+        padding: 10px 20px;
     }
 
     .content .main-content .post .post-image {
